@@ -3,69 +3,11 @@ import Layout from "./pages/Layout";
 import {sendLeads,sendLeadsTest} from "./api/apiLeads";
 
 
-//stack overflow https://stackoverflow.com/questions/68483806/react-state-gets-updated-only-after-i-submit-the-form-twice
-
 function App() {
 
   const [values,setValues] = useState({
 
-        string: 'Select item 469 Marcello Di Stasio Marcello Di Stasio marcellodistasio@outlook.de api True Select item 470 Marci Gorzynski Marci Gorzynski and116@interia.pl api True Select item 471 Marco Danuso Marco Danuso marco.danuso@phillips.com api True Select item 81 Adriano Todisco Adriano Todisco Click to dial disabled+41588618012 ato@e-novinfo.ch kals True Select item 85 Agathe Lebocq Agathe Lebocq Click to dial disabled0613601429 agathelb@yahoo.com api True Select item 85 Adrien Clarinval Adrien Clarinval aclarinval@vincotte.be mmich True Select item 582 Arno van Bunnik Nivon Click to dial disabled0655387101 tech.abk-hh@nivon.nl tbaas False',
-
-        /* 
-          Select item 469 
-          Marcello Di Stasio 
-          Marcello Di Stasio 
-          marcellodistasio@outlook.de 
-          api 
-          True 
-
-          Select item 470 
-          Marci Gorzynski 
-          Marci Gorzynski 
-          and116@interia.pl 
-          api 
-          True 
-           
-          Select item 471 
-          Marco Danuso 
-          Marco Danuso 
-          marco.danuso@phillips.com 
-          api 
-          True 
-           
-          Select item 81 
-          Adriano Todisco 
-          Adriano Todisco 
-          Click to dial disabled+41588618012 
-          ato@e-novinfo.ch 
-          kals 
-          True 
-           
-          Select item 85 
-          Agathe Lebocq 
-          Agathe Lebocq 
-          Click to dial disabled0613601429
-          agathelb@yahoo.com
-          api 
-          True
-
-          Select item 85 
-          Adrien Clarinval
-          Adrien Clarinval
-          aclarinval@vincotte.be
-          mmich 
-          True
-
-          Select item 582
-          Arno van Bunnik
-          Nivon
-          Click to dial disabled0655387101
-          tech.abk-hh@nivon.nl
-          tbaas
-          False
-
-           */
-
+        string: '',
         error: false,
         success: false
   })
@@ -249,8 +191,8 @@ const sLT = (e) => {
 
   return (
   
-    <Layout title="Lead Parser Input"
-              description="tool for parsing leads"
+    <Layout title="L.P.T."
+              description=""
               className="container col-md-8 offset-md-2">
 
               {showSuccess()}
